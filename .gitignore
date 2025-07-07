@@ -90,3 +90,17 @@ typings/
 
 # Electron-Forge
 out/
+
+# Editor directories and settings
+.vscode/
+.idea/
+
+# Windows system files
+Thumbs.db
+
+# All environment files
+.env.*
+
+# Other package manager lock files
+yarn.lock
+pnpm-lock.yaml
