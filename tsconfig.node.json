@@ -1,0 +1,25 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "lib": ["esnext"],
+    "outDir": "dist",
+    "noEmit": false,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "types": ["node", "electron"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "src/main.ts",
+    "src/preload.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/renderer.tsx"
+  ]
+}

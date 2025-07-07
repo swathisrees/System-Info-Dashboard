@@ -1,0 +1,24 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "lib": ["dom", "esnext"],
+    "jsx": "preserve",
+    "noEmit": true,
+    "isolatedModules": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "src/renderer.tsx",
+    "src/index.css"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/main.ts",
+    "src/preload.ts"
+  ]
+}
